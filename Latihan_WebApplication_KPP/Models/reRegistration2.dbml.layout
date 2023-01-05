@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 43.375" name="reRegistration2">
+  <DataContextMoniker Name="/reRegistration2DataContext" />
+  <nestedChildShapes>
+    <classShape Id="55e24fc2-e3b9-4569-8c93-609481a9d139" absoluteBounds="8.375, 1.5, 2, 41.577293294270831">
+      <DataClassMoniker Name="/reRegistration2DataContext/TBL_T_reREGISTRATION2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a9bc737-3f8f-490d-af3a-ff0db40169e1" absoluteBounds="8.39, 1.96, 1.9700000000000002, 41.017293294270829" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

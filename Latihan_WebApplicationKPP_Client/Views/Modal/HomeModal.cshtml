@@ -1,0 +1,58 @@
+﻿
+
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Update Data Karyawan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="namaInput">Nama</label>
+                        <input type="text" name="nama" class="form-control" id="namaInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" name="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="teleponInput">Telepon</label>
+                        <input type="text" name="telepon" class="form-control" id="teleponInput">
+                    </div>
+        
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="updateBtn" type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete Data Karyawan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>Lanjut untuk menghapus?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

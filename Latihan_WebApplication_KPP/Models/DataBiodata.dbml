@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_ICT_LEARNING_KPT" Class="DataBiodataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.14.101.101\shpol;Initial Catalog=DB_ICT_LEARNING_KPT;User ID=sqlservices;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DB_ICT_LEARNING_KPTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_T_BIODATA" Member="TBL_T_BIODATAs">
+    <Type Name="TBL_T_BIODATA">
+      <Column Name="NRP" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAMA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TELEPON" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.cufn_getBiodataByPanji" Method="cufn_getBiodataByPanji" IsComposable="true">
+    <ElementType Name="cufn_getBiodataByPanjiResult">
+      <Column Name="NRP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NAMA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TELEPON" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_deleteDataByNRP" Method="sp_deleteDataByNRP">
+    <Parameter Name="NRP" Parameter="nRP" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="sp_deleteDataByNRPResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.cusp_deleteDataByNRP" Method="cusp_deleteDataByNRP">
+    <Parameter Name="nrp" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.cusp_updateData" Method="cusp_updateData">
+    <Parameter Name="nrp" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nama" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="telepon" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

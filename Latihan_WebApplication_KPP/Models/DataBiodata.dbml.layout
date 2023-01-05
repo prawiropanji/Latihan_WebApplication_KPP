@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataBiodata">
+  <DataContextMoniker Name="/DataBiodataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ef3cb983-8e6a-45a1-a032-fc61bdc5b10f" absoluteBounds="7.875, 2.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataBiodataDataContext/TBL_T_BIODATA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6f6783e-8e37-4180-b255-54f991a8794f" absoluteBounds="7.89, 2.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

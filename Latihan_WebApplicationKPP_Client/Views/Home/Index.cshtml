@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts{
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/RegistrationTable.js"></script>
+}
+
+
+
+<div class="row">
+    <div class="col-md">
+        <div class="jumbotron">
+            <h1>List Karyawan</h1>
+        </div>
+        <table id="registrationTable" class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">NRP</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Telepon</th>
+                    <th scope="col">Email</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-md">
+        <div class="jumbotron">
+            <h1>List Karyawan Pilihan</h1>
+        </div>
+        <table id="karyawanTable" class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">NRP</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Telepon</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+    
+@Html.Partial("~/Views/Modal/HomeModal.cshtml")
